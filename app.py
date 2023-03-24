@@ -23,6 +23,24 @@ from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 
+def save_csv(bank_filtered_data):
+    """Ask for the file path to save the bank filtered data 
+
+    Returns:
+        True or False if the file was saved succesfully
+    """
+
+    csvpath = questionary.text("Enter the file path where you want to store the bank filtered data with .csv extension").ask()
+    csvpath = Path(csvpath)
+
+    with open(csvpath,'w',newline='') as csvfile:
+        csvwriter = csvfile.write()
+        csvwriter.writerows(bank_filtered_data[1:])
+        return True
+    
+    return False
+
+
 
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
