@@ -40,7 +40,16 @@ def save_csv(bank_filtered_data):
     
     return False
 
+def save_qualifying_loans():
+    """Ask wheter the user wants to save the qualifying loans to a file or not
 
+    Returns:
+        True or False depending on the user selection
+    """
+
+    save_loan = questionary.confirm("Do you want to save the qualifying loans?")
+
+    return save_loan
 
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
