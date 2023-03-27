@@ -1,13 +1,24 @@
-# Project Title
+# Challenge II | Fintech ![Columbia](https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_150420000000000001/attachments/590996/columbia.png)
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
-
+This project is the second weekly challenge for Fintech, the challenge deals with Readme.md files edition, modules and Git basic commands
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+The main language is Python, with the following auxiliary modules/libraries.
+Python version is 3.7, developed in an independent conda virtual environment
 
+### csv
+This module handles csv parsing, reading and writing
+
+### fire
+This modules abstracts the interface between the command line and the internal python script functions
+
+### questionary
+This module generates an interactive user input that makes the terminal interface more intuitive.
+
+### pathlib
+This module helps abstracting the OS discrepancies between folder structures and files.
 ---
 
 ## Installation Guide
