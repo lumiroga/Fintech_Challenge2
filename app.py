@@ -11,7 +11,7 @@ import fire
 import questionary
 from pathlib import Path
 
-from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import load_csv,save_qualifying_loans,save_csv
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -22,34 +22,6 @@ from qualifier.filters.max_loan_size import filter_max_loan_size
 from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
-
-def save_csv(bank_filtered_data):
-    """Ask for the file path to save the bank filtered data 
-
-    Returns:
-        True or False if the file was saved succesfully
-    """
-
-    csvpath = questionary.text("Enter the file path where you want to store the bank filtered data with .csv extension").ask()
-    csvpath = Path(csvpath)
-
-    with open(csvpath,'w',newline='') as csvfile:
-        csvwriter = csvfile.write()
-        csvwriter.writerows(bank_filtered_data[1:])
-        return True
-    
-    return False
-
-def save_qualifying_loans():
-    """Ask wheter the user wants to save the qualifying loans to a file or not
-
-    Returns:
-        True or False depending on the user selection
-    """
-
-    save_loan = questionary.confirm("Do you want to save the qualifying loans?")
-
-    return save_loan
 
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
@@ -129,16 +101,6 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
 
 
-def save_qualifying_loans(qualifying_loans):
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
-
-
 def run():
     """The main function for running the script."""
 
@@ -154,7 +116,9 @@ def run():
     )
 
     # Save qualifying loans
-    save_qualifying_loans(qualifying_loans)
+    if save_qualifying_loans():
+        save_csv(qualifying_loans)
+
 
 
 if __name__ == "__main__":
