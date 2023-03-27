@@ -23,7 +23,24 @@ This module helps abstracting the OS discrepancies between folder structures and
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+For instalation the latest version of Python is recommended.
+
+[Python](https://www.python.org)
+
+### Install the external libraries
+
+``
+pip install questionary
+pip install csv
+pip install path
+pip install fire
+``
+
+
+### Clone repository
+`` git clone https://github.com/lumiroga/Fintech_Challenge2.git
+
+
 
 ---
 
