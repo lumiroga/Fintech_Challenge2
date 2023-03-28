@@ -1,4 +1,4 @@
-# Challenge II | Fintech ![Columbia](https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_150420000000000001/attachments/590996/columbia.png | width=100)
+# Challenge II | Fintech ![Columbia](https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_150420000000000001/attachments/590996/columbia.png)
 ---
 This project is the second weekly challenge for Fintech, the challenge deals with Readme.md files edition, modules and Git basic commands
 
