@@ -50,13 +50,25 @@ pip install fire
 
 ## Usage
 
+Open the terminal
 
+Go to solution folder in your local computer
+
+`cd ./Fintech_Challenge2`
+
+`python app.py`
+
+The following commands will show:
+
+![Usage](./assets/usage.png)
+
+Type your inputs and select the name and location for your file
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+[lumiroga](https://github.com/lumiroga)
 
 ---
 
