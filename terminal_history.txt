@@ -1,0 +1,51 @@
+  255  cd ~/Fintech\Challenges\Challenge2\Starter_Code\loan_qualifier_app
+  256  cd ~/Fintech/Challenges/Challenge2/Starter_Code/loan_qualifier_app
+  257  ls
+  258  git clone https://github.com/lumiroga/Fintech_Challenge2.git
+  259  ls
+  260  ls
+  261  cd Fintech_Challenge2/
+  262  ls
+  263  git status
+  264  git add .
+  265  git commit -m "Initial commit, adding initial files"
+  266  git push
+  267  git config user.name "lumioga"
+  268  git config user.email "lumiroga@gmail.com"
+  269  git add .
+  270  ls
+  271  git status
+  272  git commit -m "Creating Save CSV Function"
+  273  git status
+  274  ls
+  275  git status
+  276  git commit -m "Added confirming save question"
+  277  git add .
+  278  git commit -m "Added confirming save question"
+  279  git add .
+  280  git commit -m "Added csv files into the utils.fileio module
+"
+  281  git add .
+  282  git commit -m "Initial **Readme** modifications"
+  283  git add .
+  284  git commit -m "Added license and installation in README file"
+  285  git push
+  286  git merge
+  287  git status
+  288  git push
+  289  git fetch
+  290  git pull
+  291  git push
+  292  C:/Users/lmros/anaconda3/envs/dev/python.exe c:/Users/lmros/Fintech/Challenges/Challenge2/Starter_Code/loan_qualifier_app/Fintech_Challenge2/app.py
+  293  python app.py
+  294  C:/Users/lmros/anaconda3/envs/dev/python.exe c:/Users/lmros/Fintech/Challenges/Challenge2/Starter_Code/loan_qualifier_app/Fintech_Challenge2/app.py
+  295  C:/Users/lmros/anaconda3/envs/dev/python.exe c:/Users/lmros/Fintech/Challenges/Challenge2/Starter_Code/loan_qualifier_app/Fintech_Challenge2/app.py
+  296  C:/Users/lmros/anaconda3/envs/dev/python.exe c:/Users/lmros/Fintech/Challenges/Challenge2/Starter_Code/loan_qualifier_app/Fintech_Challenge2/app.py
+  297  C:/Users/lmros/anaconda3/envs/dev/python.exe c:/Users/lmros/Fintech/Challenges/Challenge2/Starter_Code/loan_qualifier_app/Fintech_Challenge2/app.py
+  298  ls
+  299  git add .
+  300  git commit -m "Corrected bugs using csv write and questionary for confirmation"
+  301  git add .
+  302  git commit -m "Added screenshot and readme changes"
+  303  git push
+  304  history 50 > terminal_history.txt
