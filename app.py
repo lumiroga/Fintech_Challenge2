@@ -120,6 +120,8 @@ def run():
     #finally confirm the name and/or path for the generated csv file
         save_csv(qualifying_loans)
 
+    print("Thanks for using the Loan finder application")
+
 
 
 if __name__ == "__main__":

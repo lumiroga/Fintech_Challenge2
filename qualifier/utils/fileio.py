@@ -42,8 +42,8 @@ def save_csv(bank_filtered_data):
     csvpath = Path(csvpath)
 
     with open(csvpath,'w',newline='') as csvfile:
-        csvwriter = csvfile.write()
-        csvwriter.writerows(bank_filtered_data[1:])
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerows(bank_filtered_data)
         return True
     
     return False
@@ -55,6 +55,6 @@ def save_qualifying_loans():
         qualifying_loans (list of lists): The qualifying bank loans.
     """
 
-    save_loan = questionary.confirm("Do you want to save the qualifying loans?")
+    save_loan = questionary.confirm("Do you want to save the qualifying loans?").ask()
 
     return save_loan
